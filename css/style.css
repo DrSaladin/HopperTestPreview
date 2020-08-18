@@ -261,11 +261,11 @@ body {
 .side-error-warning {
   background: rgba(251, 217, 44, 0.16);
   border-radius: 0 4px 4px 0;
-  padding: 20px 40px 20px 80px;
+  padding: 20px 40px 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 473px;
-  height: 90px;
+  width: 300px;
+  min-height: 90px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -331,6 +331,12 @@ body {
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+@media (min-width: 768px) {
+  .side-error-warning {
+    padding: 20px 40px 20px 80px;
+    width: 473px;
   }
 }
 .working-group-form__textinputs-wrapper {
